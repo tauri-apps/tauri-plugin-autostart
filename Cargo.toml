@@ -1,0 +1,14 @@
+[package]
+name = "tauri-plugin-autostart"
+version = "0.0.0"
+authors = [ "Tauri Programme within The Commons Conservancy" ]
+description = ""
+edition = "2021"
+rust-version = "1.57"
+exclude = ["/examples", "/webview-dist", "/webview-src", "node_modules"]
+
+[dependencies]
+tauri = { version = "1.0.0-rc.8" }
+serde = "1.0"
+thiserror = "1.0"
+auto-launch = "0.2"
