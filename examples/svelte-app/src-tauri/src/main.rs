@@ -8,7 +8,7 @@ use tauri_plugin_autostart::MacosLauncher;
 fn main() {
   tauri::Builder::default()
     .plugin(tauri_plugin_autostart::init(
-      MacosLauncher::AppleScript,
+      MacosLauncher::LaunchAgent,
       false,
     ))
     .run(tauri::generate_context!())

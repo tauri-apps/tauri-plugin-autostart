@@ -91,8 +91,8 @@ pub fn init<R: Runtime>(macos_launcher: MacosLauncher, hidden: bool) -> TauriPlu
 
       #[cfg(windows)]
       builder.set_app_path(&current_exe.display().to_string());
-      #[cfg(macos)]
-      builder.set_app_path(current_exe.canonicalize()?.display().to_string());
+      #[cfg(target_os = "macos")]
+      builder.set_app_path(&current_exe.canonicalize()?.display().to_string());
       #[cfg(target_os = "linux")]
       if let Some(appimage) = app
         .env()

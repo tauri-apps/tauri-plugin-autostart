@@ -13,7 +13,7 @@ tauri = { version = "1.0.0-beta.8", features = ["api-all"] }
 tauri-plugin-autostart = { path = "../../../" }
 
 [build-dependencies]
-tauri-build = { version = "1.0.0-beta.4" }
+tauri-build = { version = "1.0.0-beta.4", features = [] }
 
 [features]
 default = [ "custom-protocol" ]
