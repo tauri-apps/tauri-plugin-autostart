@@ -9,7 +9,7 @@ fn main() {
   tauri::Builder::default()
     .plugin(tauri_plugin_autostart::init(
       MacosLauncher::LaunchAgent,
-      false,
+      None,
     ))
     .run(tauri::generate_context!())
     .expect("failed to run app");
