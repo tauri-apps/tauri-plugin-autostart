@@ -8,7 +8,7 @@ rust-version = "1.57"
 exclude = ["/examples", "/webview-dist", "/webview-src", "node_modules"]
 
 [dependencies]
-tauri = { version = "1.0.0-rc.8" }
+tauri = { version = "1" }
 serde = "1.0"
 thiserror = "1.0"
-auto-launch = "0.2"
+auto-launch = "0.3"

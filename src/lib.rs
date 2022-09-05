@@ -77,14 +77,16 @@ async fn is_enabled(manager: State<'_, AutoLaunchManager>) -> Result<bool> {
 }
 
 /// Initializes the plugin.
-pub fn init<R: Runtime>(macos_launcher: MacosLauncher, hidden: bool) -> TauriPlugin<R> {
+pub fn init<R: Runtime>(macos_launcher: MacosLauncher, args: Option<Vec<&str>>) -> TauriPlugin<R> {
   Builder::new("autostart")
     .invoke_handler(tauri::generate_handler![enable, disable, is_enabled])
     .setup(move |app| {
       let mut builder = AutoLaunchBuilder::new();
 
       builder.set_app_name(&app.package_info().name);
-      builder.set_hidden(hidden);
+      if let Some(args) = args {
+        builder.set_args(&args);
+      }
       builder.set_use_launch_agent(matches!(macos_launcher, MacosLauncher::LaunchAgent));
 
       let current_exe = current_exe()?;
