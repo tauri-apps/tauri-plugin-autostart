@@ -91,6 +91,8 @@ async fn is_enabled(manager: State<'_, AutoLaunchManager>) -> Result<bool> {
 }
 
 /// Initializes the plugin.
+///
+/// `args` - are passed to your app on startup.
 pub fn init<R: Runtime>(
   macos_launcher: MacosLauncher,
   args: Option<Vec<&'static str>>,
