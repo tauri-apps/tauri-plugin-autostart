@@ -14,4 +14,3 @@ async function disable() {
 }
 
 export { disable, enable, isEnabled };
-//# sourceMappingURL=index.mjs.map
