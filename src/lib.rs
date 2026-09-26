@@ -11,11 +11,10 @@
 #![cfg(not(any(target_os = "android", target_os = "ios")))]
 
 use auto_launch::{AutoLaunch, AutoLaunchBuilder};
-use serde::{ser::Serializer, Serialize};
+use serde::{Serialize, ser::Serializer};
 use tauri::{
-    command,
+    Manager, Runtime, State, command,
     plugin::{Builder as PluginBuilder, TauriPlugin},
-    Manager, Runtime, State,
 };
 
 use std::env::current_exe;
