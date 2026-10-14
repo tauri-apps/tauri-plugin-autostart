@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.0.0-alpha.3]
+
+- [``](https://github.com/tauri-apps/plugins-workspace/commit/undefined) Ported changes from v2.
+- [``](https://github.com/tauri-apps/plugins-workspace/commit/undefined) Update to tauri v3.0.0-alpha.4 and `@tauri-apps/api` v3.0.0-alpha.2.
+
 ## [3.0.0-alpha.2]
 
 - [`73ec7ed4`](https://github.com/tauri-apps/plugins-workspace/commit/73ec7ed4016b1078fdd9aa10d48c9b4ca97aada7) ([#3614](https://github.com/tauri-apps/plugins-workspace/pull/3614) by [@lucasfernog](https://github.com/tauri-apps/plugins-workspace/../../lucasfernog)) **Breaking:** Renamed `ManagerExt::autolaunch` to `ManagerExt::autostart`.
@@ -12,6 +17,10 @@
 ## [3.0.0-alpha.0]
 
 - [`363438b5`](https://github.com/tauri-apps/plugins-workspace/commit/363438b50a09162379d57c7c7bfc132520c1e5d4) Update to tauri 3.0 alpha.
+
+## [2.7.0]
+
+- [`2fd4bedc`](https://github.com/tauri-apps/plugins-workspace/commit/2fd4bedc8b9a57afbf6af5fd2be315adeeb857d7) ([#3546](https://github.com/tauri-apps/plugins-workspace/pull/3546)) Updated dependency `auto-launch` to 0.6
 
 ## [2.6.0]
 
